@@ -1,0 +1,25 @@
+{
+  "name": "@kidlat-ui/core",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.config.ts"
+  },
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/types",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "13.0.0",
+    "@rollup/plugin-node-resolve": "8.1.0",
+    "@types/react": "16.9.41",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "rollup": "2.18.1",
+    "rollup-plugin-typescript2": "0.27.1",
+    "typescript": "3.9.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  }
+}

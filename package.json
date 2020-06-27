@@ -1,0 +1,11 @@
+{
+  "name": "kidlat-ui",
+  "version": "1.0.0",
+  "repository": "https://sidneyramos@github.com/sidneyramos/kidlat-ui.git",
+  "author": "sidneyramos <sidney.ramos95@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
