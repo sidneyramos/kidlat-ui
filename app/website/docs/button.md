@@ -1,32 +1,20 @@
 ---
-id: box
-title: Box
-sidebar_label: Box
+id: button
+title: Button
+sidebar_label: Button
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
 ```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
+<Button>Sample</Button>
+```
 
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
+```jsx live
+<>
+  <Button variant="primary">Sample</Button>
+  <Button variant="secondary">Sample</Button>
+</>
 ```
 
 ## Markdown Syntax
