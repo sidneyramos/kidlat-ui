@@ -2,9 +2,19 @@
 import cxs from "cxs/component";
 //@ts-ignore
 import variant from "@styled-system/variant";
-import { VariantArgs } from "styled-system";
+//@ts-ignore
+import space from "@styled-system/space";
+//@ts-ignore
+import color from "@styled-system/color";
+import { SpaceProps, ColorProps } from "styled-system";
 
-const Button: React.FC<VariantArgs> = cxs("button")(
+export interface ButtonProps {
+  variant?: "primary" | "secondary";
+}
+
+const Button: React.FC<ButtonProps | SpaceProps | ColorProps> = cxs("button")(
+  space,
+  color,
   {
     fontFamily: "inherit",
     color: "white",
