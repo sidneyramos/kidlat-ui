@@ -1,6 +1,6 @@
 {
   "name": "@kidlat-ui/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c rollup.config.ts"
@@ -13,6 +13,7 @@
     "@rollup/plugin-commonjs": "13.0.0",
     "@rollup/plugin-node-resolve": "8.1.0",
     "@types/react": "16.9.41",
+    "@types/styled-system": "^5.1.9",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "rollup": "2.18.1",
@@ -25,7 +26,6 @@
   },
   "dependencies": {
     "@emotion/styled": "^10.0.27",
-    "@types/styled-system": "^5.1.9",
     "styled-system": "^5.1.5"
   }
 }
