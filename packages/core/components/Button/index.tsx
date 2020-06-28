@@ -1,8 +1,10 @@
-import styled from "@emotion/styled";
+//@ts-ignore
+import cxs from "cxs/component";
 //@ts-ignore
 import variant from "@styled-system/variant";
+import { VariantArgs } from "styled-system";
 
-const Button = styled("button")(
+const Button: React.FC<VariantArgs> = cxs("button")(
   {
     fontFamily: "inherit",
     color: "white",

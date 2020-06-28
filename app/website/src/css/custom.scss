@@ -46,12 +46,13 @@
   position: relative;
 }
 
-.mdxCodeBlock__-_-node_modules-\@docusaurus-theme-classic-src-theme-MDXComponents- {
+.mdxCodeBlock_src-theme-MDXComponents- {
   & > div {
     font-size: calc(var(--ifm-code-font-size) * 1.25);
 
-    &.playgroundEditorHeader__-_-node_modules-\@docusaurus-theme-live-codeblock-src-theme-Playground- {
-      font-size: calc(var(--ifm-code-font-size) * 1);
+    &.playgroundEditorHeader__-_-node_modules-\@docusaurus-theme-live-codeblock-src-theme-Playground-,
+    &.playgroundPreviewHeader__-_-node_modules-\@docusaurus-theme-live-codeblock-src-theme-Playground- {
+      display: none;
     }
   }
 }

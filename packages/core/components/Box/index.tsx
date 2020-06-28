@@ -1,11 +1,17 @@
-import styled from "@emotion/styled";
+//@ts-ignore
+import cxs from "cxs/component";
 //@ts-ignore
 import typography from "@styled-system/typography";
 //@ts-ignore
 import space from "@styled-system/space";
 //@ts-ignore
 import color from "@styled-system/color";
+import { TypographyProps, SpaceProps, ColorProps } from "styled-system";
 
-const Box = styled("div")(typography, space, color);
+const Box: React.FC<TypographyProps | SpaceProps | ColorProps> = cxs("div")(
+  typography,
+  space,
+  color
+);
 
 export default Box;
