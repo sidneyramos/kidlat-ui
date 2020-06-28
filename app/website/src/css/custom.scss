@@ -1,0 +1,57 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url("https://fonts.cdnfonts.com/css/switzerlandinserat");
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0479c2;
+  --ifm-color-primary-dark: #036cae;
+  --ifm-color-primary-darker: #03609b;
+  --ifm-color-primary-darkest: #025487;
+  --ifm-color-primary-light: #1d86c8;
+  --ifm-color-primary-lighter: #3693ce;
+  --ifm-color-primary-lightest: #4fa1d4;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar__title {
+  font-family: "SwitzerlandInserat", sans-serif;
+  text-transform: uppercase;
+  font-size: calc(var(--ifm-font-size-base) * 2);
+  letter-spacing: 1px;
+  // margin-top: -10px;
+}
+
+.navbar__logo {
+  position: absolute;
+  @media only screen and (min-width: 997px) {
+    height: 120%;
+    left: 11px;
+  }
+}
+
+.navbar-sidebar__brand {
+  position: relative;
+}
+
+.mdxCodeBlock__-_-node_modules-\@docusaurus-theme-classic-src-theme-MDXComponents- {
+  & > div {
+    font-size: calc(var(--ifm-code-font-size) * 1.25);
+
+    &.playgroundEditorHeader__-_-node_modules-\@docusaurus-theme-live-codeblock-src-theme-Playground- {
+      font-size: calc(var(--ifm-code-font-size) * 1);
+    }
+  }
+}
