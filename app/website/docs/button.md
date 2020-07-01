@@ -19,6 +19,17 @@ You can write content using [GitHub-flavored Markdown syntax](https://github.git
 </>
 ```
 
+```jsx live
+<>
+  <Button bg="#000" _hover={{ bg: "#f3f3f3" }}>
+    Black
+  </Button>
+  <Button variant="secondary" ml="10px">
+    Secondary
+  </Button>
+</>
+```
+
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.

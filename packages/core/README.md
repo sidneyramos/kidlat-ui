@@ -23,7 +23,7 @@
 ### Installation
 
 ```
-$ yarn @kidlat-ui/core @emotion/core
+$ yarn @kidlat-ui/core
 # or
-$ npm install @kidlat-ui/core @emotion/core
+$ npm install @kidlat-ui/core
 ```
