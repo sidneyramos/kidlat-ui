@@ -2,27 +2,10 @@ import React, { useState } from "react";
 //@ts-ignore
 import cxs from "cxs/component";
 //@ts-ignore
-import typography from "@styled-system/typography";
-//@ts-ignore
-import space from "@styled-system/space";
-//@ts-ignore
-import color from "@styled-system/color";
-//@ts-ignore
-import layout from "@styled-system/layout";
-//@ts-ignore
-import flexbox from "@styled-system/flexbox";
-//@ts-ignore
-import background from "@styled-system/background";
-//@ts-ignore
-import border from "@styled-system/border";
-//@ts-ignore
-import position from "@styled-system/position";
-//@ts-ignore
-import shadow from "@styled-system/shadow";
-//@ts-ignore
 import variant from "@styled-system/variant";
 import * as KidlatColor from "../Color";
 import { useDebouncedCallback } from "use-debounce";
+import composeComponent from "../composeComponent";
 
 import { StylesProps } from "styled-system";
 
@@ -62,16 +45,9 @@ const InputWrapper: React.FC<InputProps> = ({
   );
 };
 
-const InputComponent: React.FC<StylesProps | InputProps> = cxs(InputWrapper)(
-  typography,
-  space,
-  color,
-  layout,
-  flexbox,
-  background,
-  border,
-  position,
-  shadow,
+const InputComponent: React.FC<StylesProps | InputProps> = cxs(
+  composeComponent(InputWrapper)
+)(
   {
     fontFamily: "inherit",
     fontSize: "16px",

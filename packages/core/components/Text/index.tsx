@@ -1,24 +1,7 @@
 import React from "react";
 //@ts-ignore
 import cxs from "cxs/component";
-//@ts-ignore
-import typography from "@styled-system/typography";
-//@ts-ignore
-import space from "@styled-system/space";
-//@ts-ignore
-import color from "@styled-system/color";
-//@ts-ignore
-import layout from "@styled-system/layout";
-//@ts-ignore
-import flexbox from "@styled-system/flexbox";
-//@ts-ignore
-import background from "@styled-system/background";
-//@ts-ignore
-import border from "@styled-system/border";
-//@ts-ignore
-import position from "@styled-system/position";
-//@ts-ignore
-import shadow from "@styled-system/shadow";
+import composeComponent from "../composeComponent";
 
 import { StylesProps } from "styled-system";
 
@@ -47,23 +30,14 @@ const TextWrapper: React.FC<TextProps> = ({ variant, children, ...props }) => {
   }
 };
 
-const TextComponent: React.FC<StylesProps | TextProps> = cxs(TextWrapper)(
-  typography,
-  space,
-  color,
-  layout,
-  flexbox,
-  background,
-  border,
-  position,
-  shadow,
-  ({ hover, active, focus }: PseudoProps) => {
-    return {
-      "&:hover": hover,
-      "&:active": active,
-      "&:focus": focus,
-    };
-  }
-);
+const TextComponent: React.FC<StylesProps | TextProps> = cxs(
+  composeComponent(TextWrapper)
+)(({ hover, active, focus }: PseudoProps) => {
+  return {
+    "&:hover": hover,
+    "&:active": active,
+    "&:focus": focus,
+  };
+});
 
 export default TextComponent;
