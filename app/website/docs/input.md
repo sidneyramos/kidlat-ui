@@ -20,7 +20,7 @@ function LiveInput() {
       <Input
         placeholder="Default input"
         getValue={setValue} // accepts a callback
-        valueDelay={200} // how long to wait to get the value
+        valueDelay={500} // how long to wait to get the value
       />
       <p>Input value: {value}</p>
     </div>
