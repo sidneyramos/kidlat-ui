@@ -4,31 +4,17 @@ title: Box
 sidebar_label: Box
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+This component acts as a div, it can act as a foundational component where you create different other components from.
 
 ```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
+<Box>Box</Box>
 ```
 
+```jsx live
+<Box backgroundColor="red" width="40px" height="40px" />
+```
+
+<!--
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.
@@ -220,4 +206,4 @@ This is a caution
 
 This is a warning
 
-:::
+::: -->

@@ -1,38 +1,55 @@
 ---
-id: index
-title: What is Kidlat?
-sidebar_label: What is Kidlat?
+id: input
+title: Input
+sidebar_label: Input
 ---
 
-### **What is Kidlat?**
+An easy-to-style Input component. Includes debounced (delayed until keypress pause) input change, to save input from updating too much.
 
-Kidlat (**Lightning**⚡️ in Tagalog 🇵🇭) is a lightweight, composable, and accessible UI component library based on ReactJS.
-It is heavily influenced by Chakra UI, Rebass, and Styled-System.
-
-<!--
 ```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
+<Input placeholder="Default input" />
+```
 
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
+## Get Value
 
-  function tick() {
-    setDate(new Date());
-  }
-
+```jsx live
+function LiveInput() {
+  const [value, setValue] = useState("");
   return (
     <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
+      <Input
+        placeholder="Default input"
+        getValue={setValue} // accepts a callback
+        valueDelay={200} // how long to wait to get the value
+      />
+      <p>Input value: {value}</p>
     </div>
   );
 }
 ```
 
+## Variants
+
+```jsx live
+<>
+  <Input placeholder="Minimal" variant="minimal" m="10px" />
+  <Input placeholder="Line input" variant="underline" m="10px" />
+  <Input placeholder="Unstyled" variant="unstyled" m="10px" />
+</>
+```
+
+## Sizes
+
+```jsx live
+<>
+  <Input placeholder="XS input" size="xs" mr="10px" />
+  <Input placeholder="Small input" size="sm" mr="10px" />
+  <Input placeholder="Medium input" size="md" mr="10px" />
+  <Input placeholder="Large input" size="lg" mr="10px" />
+</>
+```
+
+<!--
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.

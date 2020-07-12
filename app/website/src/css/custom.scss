@@ -46,6 +46,12 @@
   position: relative;
 }
 
+.hash-link {
+  &:before {
+    content: "⚡";
+  }
+}
+
 .mdxCodeBlock_src-theme-MDXComponents- {
   & > div {
     font-size: calc(var(--ifm-code-font-size) * 1.25);

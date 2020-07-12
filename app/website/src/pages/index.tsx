@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.scss";
+import { Input } from "@kidlat-ui/core";
 
 const features = [
   {
@@ -65,7 +66,7 @@ function Home() {
       <header className={clsx("hero", styles.heroBanner)}>
         <div className="container">
           <h1 className={clsx("hero__title", styles.heroTitle)}>
-            Blaze through React apps with the speed of light ⚡️{" "}
+            Blaze through React apps with the speed of light ⚡️
           </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>

@@ -4,11 +4,13 @@ title: Button
 sidebar_label: Button
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+An easy-to-style Button component.
 
 ```jsx live
 <Button>Button</Button>
 ```
+
+## Variants
 
 ```jsx live
 <>
@@ -19,17 +21,70 @@ You can write content using [GitHub-flavored Markdown syntax](https://github.git
 </>
 ```
 
+## Sizes
+
 ```jsx live
 <>
-  <Button bg="#000" _hover={{ bg: "#f3f3f3" }}>
-    Black
+  <Button size="xs">XS Button</Button>
+  <Button size="sm" ml="10px">
+    SM Button
   </Button>
-  <Button variant="secondary" ml="10px">
-    Secondary
+  <Button size="md" ml="10px">
+    MD Button
+  </Button>
+  <Button size="lg" ml="10px">
+    LG Button
   </Button>
 </>
 ```
 
+## Tints
+
+```jsx live
+<>
+  <Button tint="blue" mb="10px">
+    Blue
+  </Button>
+  <Button tint="cyan" ml="10px" variant="secondary">
+    Cyan
+  </Button>
+  <Button tint="fuchsia" ml="10px">
+    Fuchsia
+  </Button>
+  <Button tint="gray" ml="10px" variant="secondary">
+    Gray
+  </Button>
+  <Button tint="green" ml="10px">
+    Green
+  </Button>
+  <Button tint="indigo" ml="10px" variant="secondary">
+    Indigo
+  </Button>
+  <Button tint="lime" ml="10px">
+    Lime
+  </Button>
+  <Button tint="orange" variant="secondary">
+    Orange
+  </Button>
+  <Button tint="pink" ml="10px">
+    Pink
+  </Button>
+  <Button tint="red" ml="10px" variant="secondary">
+    Red
+  </Button>
+  <Button tint="teal" ml="10px">
+    Teal
+  </Button>
+  <Button tint="violet" ml="10px" variant="secondary">
+    Violet
+  </Button>
+  <Button tint="yellow" ml="10px">
+    Yellow
+  </Button>
+</>
+```
+
+<!--
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.
@@ -221,4 +276,4 @@ This is a caution
 
 This is a warning
 
-:::
+::: -->

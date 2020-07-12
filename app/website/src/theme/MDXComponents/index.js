@@ -5,11 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "@docusaurus/Link";
 import CodeBlock from "@theme/CodeBlock";
 import Heading from "@theme/Heading";
-import { Button, Box } from "@kidlat-ui/core";
+import { Button, Box, Text, Input } from "@kidlat-ui/core";
 
 import styles from "./styles.module.css";
 
@@ -20,7 +20,9 @@ export default {
       if (!children.includes("\n")) {
         return <code {...props} />;
       }
-      return <CodeBlock {...props} scope={{ Button, Box }} />;
+      return (
+        <CodeBlock {...props} scope={{ Button, Box, Text, Input, useState }} />
+      );
     }
     return children;
   },

@@ -4,6 +4,7 @@ import typescript from "rollup-plugin-typescript2";
 import { terser } from "rollup-plugin-terser";
 import compiler from "@ampproject/rollup-plugin-closure-compiler";
 import pkg from "./package.json";
+import json from "@rollup/plugin-json";
 
 export default {
   input: "components/index.ts",
@@ -19,6 +20,7 @@ export default {
   ],
   external: ["react"],
   plugins: [
+    json(),
     resolve(),
     commonjs(),
     typescript({
