@@ -20,6 +20,8 @@
     <br> 
 </p>
 
+Kidlat's Size is maintained through <a href="https://github.com/ai/size-limit">Size Limit</a>
+
 ## 📝 Table of Contents
 
 - [About](#about)
