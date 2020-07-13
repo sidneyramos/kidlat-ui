@@ -1,6 +1,6 @@
 import React from "react";
 import { StylesProps } from "styled-system";
-interface InputProps {
+interface TextareaProps {
     placeholder?: string;
     defaultValue?: string;
     getValue?: Function;
@@ -13,5 +13,5 @@ export interface PseudoProps {
     focus?: StylesProps;
     active?: StylesProps;
 }
-declare const InputComponent: React.FC<StylesProps | InputProps>;
-export default InputComponent;
+declare const TextareaComponent: React.FC<StylesProps | TextareaProps>;
+export default TextareaComponent;

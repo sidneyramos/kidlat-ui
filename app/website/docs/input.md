@@ -10,6 +10,21 @@ An easy-to-style Input component. Includes debounced (delayed until keypress pau
 <Input placeholder="Default input" />
 ```
 
+## Disabled
+
+```jsx live
+<Input disabled placeholder="Default input" />
+```
+
+## Invalid Value
+
+```jsx live
+<>
+  <Input required placeholder="Default input" />
+  <Input isInvalid placeholder="Default input" />
+</>
+```
+
 ## Get Value
 
 ```jsx live

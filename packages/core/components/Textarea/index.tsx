@@ -9,7 +9,7 @@ import composeComponent from "../composeComponent";
 
 import { StylesProps } from "styled-system";
 
-interface InputProps {
+interface TextareaProps {
   placeholder?: string;
   defaultValue?: string;
   getValue?: Function;
@@ -24,7 +24,7 @@ export interface PseudoProps {
   active?: StylesProps;
 }
 
-const InputWrapper: React.FC<InputProps> = ({
+const TextareaWrapper: React.FC<TextareaProps> = ({
   defaultValue,
   getValue,
   valueDelay = 300,
@@ -38,7 +38,7 @@ const InputWrapper: React.FC<InputProps> = ({
     setValue(val);
   }, valueDelay);
   return (
-    <input
+    <textarea
       defaultValue={defaultValue}
       onChange={(e) => debouncedCallback(e.target.value)}
       {...props}
@@ -46,10 +46,10 @@ const InputWrapper: React.FC<InputProps> = ({
   );
 };
 
-const InputComponent: React.FC<StylesProps | InputProps> = cxs(
-  composeComponent(InputWrapper)
+const TextareaComponent: React.FC<StylesProps | TextareaProps> = cxs(
+  composeComponent(TextareaWrapper)
 )(
-  (props: InputProps) => ({
+  (props: TextareaProps) => ({
     fontFamily: "inherit",
     fontSize: "16px",
     backgroundColor: "rgba(255,255,255,0.05)",
@@ -131,4 +131,4 @@ const InputComponent: React.FC<StylesProps | InputProps> = cxs(
   }
 );
 
-export default InputComponent;
+export default TextareaComponent;

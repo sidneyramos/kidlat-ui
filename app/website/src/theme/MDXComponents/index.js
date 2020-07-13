@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import Link from "@docusaurus/Link";
 import CodeBlock from "@theme/CodeBlock";
 import Heading from "@theme/Heading";
-import { Button, Box, Text, Input } from "@kidlat-ui/core";
+import { Button, Box, Text, Input, Textarea } from "@kidlat-ui/core";
 
 import styles from "./styles.module.css";
 
@@ -21,7 +21,10 @@ export default {
         return <code {...props} />;
       }
       return (
-        <CodeBlock {...props} scope={{ Button, Box, Text, Input, useState }} />
+        <CodeBlock
+          {...props}
+          scope={{ Button, Box, Text, Input, Textarea, useState }}
+        />
       );
     }
     return children;
