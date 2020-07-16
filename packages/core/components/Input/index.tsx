@@ -75,6 +75,9 @@ const InputComponent: React.FC<StylesProps | InputProps> = cxs(
       borderColor: KidlatColor.red[600],
       boxShadow: `${KidlatColor.red[600]} 0px 0px 0px 1px`,
     },
+    "&::placeholder": {
+      opacity: 0.5,
+    },
   }),
   variant({
     prop: "size",
